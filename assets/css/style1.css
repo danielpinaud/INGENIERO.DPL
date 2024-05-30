@@ -1,0 +1,376 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Montserrat', sans-serif;
+}
+
+.wrapper{
+    width: 100vw;
+    height: 100vh;
+    background-color: #191c32;
+    color: #fff;
+}
+.navbar{
+    display: flex;
+    justify-content: space-between;
+    padding: 2em;
+}
+.brand{
+    margin-top: -7px;
+}
+.brand span{
+    color: rgb(53, 149, 238);
+}
+.menu{
+    display: flex;
+    width: 50%;
+    justify-content: space-around;
+}
+.menu li{
+    list-style: none;
+
+}
+.menu a{
+    color: #fff;
+    text-decoration: none;
+    padding: 10px 20px;
+}
+.menu .active{
+    color: rgb(53, 149, 238);
+}
+.menu a:hover{
+    background-color: rgb(114, 191, 253);
+    color: #191c32;
+    transition: ease-in .2s;
+}
+.main{
+    margin: 0 auto;
+    width: 80vw;
+    height: 80vh;
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    align-items: center;
+}
+h1{
+    font-size: 3em;
+}
+span{
+    color: rgb(53, 149, 238);
+}
+.main img{
+    width: 453px;
+    float: right;
+    margin-left: 20%;
+}
+.intro-desc {
+    font-size: 18px;
+    color: #555;
+    margin-top: 10px;
+    margin-left: 5%;
+}
+.intro-desc span {
+    display: inline-block; 
+    margin-right: 5px; 
+}
+
+.intro-desc .colour-splash {
+    color: #fff; 
+    font-size: 20px; 
+    line-height: 18px; 
+}
+
+@media (max-width: 768px) {
+    .info-content h1 {
+        font-size: 28px;
+    }
+    .intro-desc {
+        font-size: 16px;
+    }
+    .intro-desc .colour-splash {
+        font-size: 18px;
+    }
+}
+
+.about{
+    display: grid;
+    grid-template-columns: repeat(10,1fr);
+    width: 100vw;
+    align-items: center;
+}
+
+.about img{
+    width: 60%;
+    grid-column: 1/5;
+}
+.about-info{
+    grid-column: 5/10;
+    padding: 3em;
+}
+
+.about-info h2{
+    font-size: 2em;
+    color: #191c32;
+}
+.divider{
+    height: 4px;
+    width: 60px;
+    background-color: rgb(53, 149, 238);
+    margin-top: 10px;
+    margin-bottom: 2.5em;
+}
+
+.about p{
+    margin-bottom: 1em;
+}
+
+.btn {
+    background-color: #007bff;
+    color: white; 
+    border: none;
+    padding: 12px 24px; 
+    font-size: 16px; 
+    border-radius: 4px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+.btn:hover {
+    background-color: #0056b3;
+}
+
+.btn:active {
+    transform: scale(0.98); 
+}
+
+.btn:focus {
+    outline: none; 
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); 
+}
+
+.portfolio{
+    width: 100vw;
+    background-color: #191c32;
+    color: #fff;
+}
+
+
+.portfolio-headings{
+    width: 100vw;
+    padding: 5em;
+}
+
+
+.portfolio-headings h2{
+    font-size: 2.5em;
+}
+
+.portfolio .container{
+    width: 80vw;
+    height: 80vh;
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+
+.card{
+    width: 300px;
+    height: 380px;
+    background-color: #3c74b1;
+    margin: 1em;
+
+}
+
+.card__img{
+    width: 100%;
+    height: 150px;
+    background-image: url(../img/portafolio2.png);
+    background-size: cover;
+}
+.card__img2{
+    width: 100%;
+    height: 150px;
+    background-image: url(../img/portafolio1.png);
+    background-size: cover;
+}
+.card__img3{
+    width: 100%;
+    height: 150px;
+    background-image: url(../img/p3.png);
+    background-size: cover;
+}
+
+.card__title{
+    padding: 20px;
+}
+
+.card__projects-links{
+    display: flex;
+    justify-content: space-evenly;
+}
+.card__projects-links a{
+    color: #fff;
+    text-decoration: none;
+}
+.card__projects-links i{
+    font-size: 1.5em;
+}
+.btn-project {
+    background-color: #007bff;
+    color: white; 
+    border: none;
+    padding: 12px 24px; 
+    margin: 0 auto;
+    margin: 1em;
+    width: 70%;
+    font-size: 16px; 
+    border-radius: 9px; 
+    cursor: pointer; 
+    transition: background-color 0.3s, transform 0.3s; 
+}
+
+.btn-project:hover {
+    background-color: #05468b;
+}
+
+.btn-project:active {
+    transform: scale(0.98); 
+}
+
+.btn-project:focus {
+    outline: none; 
+    box-shadow: 0 0 0 3px rgba(0, 123, 255, 0.5); 
+}
+.btn-project a{
+    text-decoration: none;
+    color: #fff;
+    text-transform: uppercase;
+}
+.project-details-content{
+    display: flex;
+    width: 100%;
+    justify-content: center;
+    margin-top: 1em;
+}
+
+
+
+.contact-section {
+    width: 80%;
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: #fff;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+}
+
+.contact-headings {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.contact-headings h2 {
+    margin: 0;
+    font-size: 2.5em;
+    color: #333;
+}
+
+.divider-contact {
+    width: 50px;
+    height: 4px;
+    background-color: #007bff;
+    margin: 2px auto;
+    margin-right: 545px;
+}
+
+.container-contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-contact img {
+    width: 150px;
+    height: auto;
+    margin-right: 20px; 
+    border-radius: 8px;
+    opacity: 0.9;
+}
+
+.contact-form {
+    max-width: 400px;
+    width: 100%;
+}
+
+.contact-form h4 {
+    margin-bottom: 10px;
+    font-size: 18px;
+    color: #333;
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+}
+
+.form input,
+.form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    color: #333;
+}
+
+.form textarea {
+    height: 100px;
+    resize: vertical;
+}
+
+.btn-submit {
+    padding: 12px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.btn-submit:hover {
+    background-color: #0056b3;
+}
+
+.footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100vw;
+    height: 200px;
+    background-color: #191c32;
+    color: #fff;
+}
+
+.footer-content h2{
+    font-size: 3em;
+
+}
+.footer-content h5,
+.social-network i{
+    font-size: 1.5em;
+    text-align: center;
+}
+
+.social-network{
+    display: flex;
+    justify-content: space-evenly;
+    width: 300px;
+    margin-top: 1em;
+}

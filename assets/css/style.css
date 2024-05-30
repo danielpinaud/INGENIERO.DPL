@@ -1,0 +1,39 @@
+.margen-hero {
+    margin-top: 160px;
+}
+
+.margen-button {
+    margin-bottom: 110px;
+}
+
+.img-back {
+   /* background-image: url(../img/backgound.png);*/
+    background-color: #191c32;
+}
+
+.montserrat {
+    font-family: "Montserrat", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+  }
+  
+   .o{ 
+    color: rgb(53, 149, 238);
+   }
+  .accordion {
+    --bs-accordion-active-bg: #E5E5E5;
+    --bs-accordion-btn-focus-box-shadow: #1e8328;
+  }
+
+  .p {
+    color:  rgb(255, 255, 255);;
+  }
+ 
+
+  span{ 
+    color: rgb(255, 255, 255);
+   }
+
+   .azul{ 
+    color: #191c32;
+   }
